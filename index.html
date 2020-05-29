@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon_io/favicon.ico">
+    <title>Lyrical</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container py-5">
+    <div class="jumbotron text-center">
+        <h2>Hello, Guys!</p>
+        <h3 >Lyrical Is Here To Tell Your Favourite Song's Lyrics.</h1>
+        <hr class="my-4">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter Artist Name" aria-label="Artist" aria-describedby="basic-addon1" id="artist">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter Song Title" aria-label="Song Title" aria-describedby="basic-addon1" id="title">
+          </div>
+         <button type="button" onclick="getdata()" class="btn btn-primary mt-3">Get Lyrics</button>
+      </div>
+    </div>
+    <div class="container">
+        <div id="txthere" class="lyrics"></div>
+    </div>
+    <script src="js/lyric.js"></script>
+</body>
+</html>
