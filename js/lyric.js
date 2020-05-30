@@ -12,7 +12,7 @@ fetch(`https://api.lyrics.ovh/v1/${artist}/${title}`).then((lyricdata) =>{
 }).then((readdata) =>{
     const mylyric = readdata.lyrics.replace(/\n/g, '<br />');
     console.log(mylyric);
-    heading.innerHTML = `<div class="text-center">Here is ${title} lyrics : </div> <br> ${mylyric}`;
+    heading.innerHTML = `<div class="text-center">Here is ${title}'s lyrics : </div> <br> ${mylyric}`;
     // document.write(mylyric);
 }).catch((error) => {
     heading.innerHTML = "Sorry Couldn't Find This Song";
